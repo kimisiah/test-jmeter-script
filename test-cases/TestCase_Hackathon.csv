@@ -1,4 +1,4 @@
 Test Case ID,Test Case Description,FUNCTIONNAME,METHOD,PATH,IS_AUTHORIZATION_REQUIRED,SLA,ITERATION,RESPONSE_FIELD_TO_CHECK ,EXPECTED_RESULT
 TC1,Verify performance of function retrieveAccountDetails,retrieveAccountDetails,GET,/demo/v1/bank/account,FALSE,2000,5,,200
-TC2,Verify performance of function retrieveCreditCardDetails,retrieveCreditCardDetails,GET,/demo/v1/creditcard/account,FALSE,2000,5,,200
+TC2,Verify performance of function retrieveCreditCardDetails,retrieveCreditCardDetails,GET,/demo/v1/creditcard/account,FALSE,2,5,,200
 TC3,Verify performance of function retrieveInsuranceDetails,retrieveInsuranceDetails,GET,/demo/v1/insurance/account,FALSE,2000,5,,200
