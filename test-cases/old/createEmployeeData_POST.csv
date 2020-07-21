@@ -1,0 +1,2 @@
+﻿Test Case ID,FUNCTIONNAME,PATH,METHOD,HEADER_NAME_1,HEADER_VALUE_1,FILENAME,name,salary,age,RESPONSE_FIELD_TO_CHECK ,EXPECTED_RESULT
+TC1,createEmployeeData,/api/v1/create,POST,Content-Type,application/json,createEmployeeData_RequestBody,Anthony,"20,000",23,,200

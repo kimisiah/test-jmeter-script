@@ -1,0 +1,3 @@
+Test Case ID,Test Case Description,IS_AUTHORIZATION_REQUIRED,FUNCTIONNAME,PATH,METHOD,FILENAME,id,username,firstName,lastName,email,password,phone,userStatus,RESPONSE_FIELD_TO_CHECK ,EXPECTED_RESULT
+TC1,Verify the Create user function displays Response code 200 with valid inputs,TRUE,createUser,/v2/user,POST,createUser_RequestBody,1,anthonytest_1234,firstname,lastname,email@email.com,Welcome123,123-456-789,1,,200
+TC2,Verify the Create user function displays Response code 400 with invalid id,FALSE,createUser,/v2/user,POST,createUser_RequestBody,invalidId,anthonytest_1235,firstname,lastname,email@email.com,Welcome123,123-456-789,1,,400

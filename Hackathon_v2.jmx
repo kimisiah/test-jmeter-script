@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Initialize Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="PARAM_NAME_1" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_NAME_1</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_VALUE_1" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_VALUE_1</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_NAME_2" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_NAME_2</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_VALUE_2" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_VALUE_2</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_NAME_3" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_NAME_3</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_VALUE_3" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_VALUE_3</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_NAME_4" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_NAME_4</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_VALUE_4" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_VALUE_4</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_NAME_5" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_NAME_5</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="PARAM_VALUE_5" elementType="Argument">
+            <stringProp name="Argument.name">PARAM_VALUE_5</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_NAME_1" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_NAME_1</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_VALUE_1" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_VALUE_1</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_NAME_2" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_NAME_2</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_VALUE_2" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_VALUE_2</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_NAME_3" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_NAME_3</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_VALUE_3" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_VALUE_3</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_NAME_4" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_NAME_4</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_VALUE_4" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_VALUE_4</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_NAME_5" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_NAME_5</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HEADER_VALUE_5" elementType="Argument">
+            <stringProp name="Argument.name">HEADER_VALUE_5</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">sets value as empty if not used in the test data</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ITERATION" elementType="Argument">
+            <stringProp name="Argument.name">ITERATION</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Global Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="SCRIPTLOC" elementType="Argument">
+            <stringProp name="Argument.name">SCRIPTLOC</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}lib${__BeanShell(File.separator,)}</stringProp>
+            <stringProp name="Argument.desc">locates files inside the folder called “lib”</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RESULTLOC" elementType="Argument">
+            <stringProp name="Argument.name">RESULTLOC</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}test-results${__BeanShell(File.separator,)}</stringProp>
+            <stringProp name="Argument.desc">locates file inside the folder called &quot;test-results&quot;</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="filename">ConfigFile.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Setup Global Properties" enabled="true">
+          <stringProp name="BeanShellSampler.query">//GLOBAL REQUEST DEFAULTS
+String globalServerName = vars.get(&quot;GLOBAL_SERVERNAME&quot;);
+String globalProtocol = vars.get(&quot;GLOBAL_PROTOCOL&quot;);
+String globalPort = vars.get(&quot;GLOBAL_PORT&quot;);
+log.info(&quot;SETUP GLOBAL SERVER NAME IS: &quot; + globalServerName);
+log.info(&quot;SETUP GLOBAL PROTOCOL IS: &quot; + globalProtocol);
+log.info(&quot;SETUP GLOBAL PORT IS: &quot; + globalPort);
+props.put(&quot;pGLOBAL_SERVERNAME&quot;,vars.get(&quot;GLOBAL_SERVERNAME&quot;));
+props.put(&quot;pGLOBAL_PROTOCOL&quot;,vars.get(&quot;GLOBAL_PROTOCOL&quot;));
+props.put(&quot;pGLOBAL_PORT&quot;,vars.get(&quot;GLOBAL_PORT&quot;));
+
+//THREADS
+String threadCount = vars.get(&quot;THREAD_COUNT&quot;);
+String threadRampup = vars.get(&quot;THREAD_RAMPUP&quot;);
+log.info(&quot;SETUP THREAD COUNT IS: &quot; + threadCount);
+log.info(&quot;SETUP THREAD RAMPUP IS: &quot; + threadRampup);
+props.put(&quot;pTHREADCOUNT&quot;,vars.get(&quot;THREAD_COUNT&quot;));
+props.put(&quot;pTHREADRAMPUP&quot;,vars.get(&quot;THREAD_RAMPUP&quot;));
+
+//FILETOTEST
+String fileToTest = vars.get(&quot;FILE_TO_TEST&quot;);
+log.info(&quot;SETUP FILE TO TEST IS: &quot; + fileToTest);
+props.put(&quot;pFILE_TO_TEST&quot;,vars.get(&quot;FILE_TO_TEST&quot;));</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(pTHREADCOUNT)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(pTHREADRAMPUP)}</stringProp>
+        <longProp name="ThreadGroup.start_time">1594036939000</longProp>
+        <longProp name="ThreadGroup.end_time">1594036939000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="filename">./test-cases/${__P(pFILE_TO_TEST)}.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${__P(pGLOBAL_SERVERNAME)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(pGLOBAL_PORT)}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${__P(pGLOBAL_PROTOCOL)}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Authorization Controller" enabled="true">
+          <stringProp name="IfController.condition">&quot;${IS_AUTHORIZATION_REQUIRED}&quot;!=&quot;FALSE&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Authorization" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${__eval(${__FileToString(${SCRIPTLOC}${__eval(${FILENAME})}.json,,)})}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${__eval(${PATH})}</stringProp>
+            <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Access Token from Response" enabled="true">
+              <stringProp name="TestPlan.comments">{&quot;access_token&quot;: &quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">access_token</stringProp>
+              <stringProp name="RegexExtractor.regex">${REGULAR_EXPRESSION}</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">&lt;empty&gt;</stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>false</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>false</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>true</fieldNames>
+                  <responseHeaders>true</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <sentBytes>true</sentBytes>
+                  <fileName>true</fileName>
+                  <idleTime>true</idleTime>
+                  <connectTime>true</connectTime>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Method Controller" enabled="true">
+          <stringProp name="IfController.condition">&quot;${METHOD}&quot;==&quot;GET&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${ITERATION}</stringProp>
+          </LoopController>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Is Authorization Required" enabled="true">
+              <stringProp name="IfController.condition">&quot;${IS_AUTHORIZATION_REQUIRED}&quot;!=&quot;FALSE&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${Test Case ID}_${FUNCTIONNAME}_GET" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="${PARAM_NAME_1}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_1}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_1}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_2}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_2}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_2}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_3}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_3}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_3}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_4}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_4}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_4}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_5}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_5}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_5}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${__eval(${PATH})}</stringProp>
+                <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="script">import testteam.file.JSONHelper; 
+
+String jsonResponseBody = prev.getResponseDataAsString(); 
+
+if(vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;).equals(&quot;&quot;)){
+	val= prev.getResponseCode();
+	vars.put(&quot;ACTUAL_VALUE&quot;, val);
+}else{
+	String jsonPath = &quot;$..&quot;+ vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;);
+	val=JSONHelper.readJsonPath(jsonResponseBody, jsonPath);
+	vars.put(&quot;ACTUAL_VALUE&quot;, val.get(0).toString());
+}
+
+log.info(&quot;Response Value Extracted: &quot; + vars.get(&quot;ACTUAL_VALUE&quot;));</stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="96920656">${EXPECTED_RESULT}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                  <stringProp name="Assertion.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">ACTUAL_VALUE</stringProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Is Authorization NOT Required" enabled="true">
+              <stringProp name="IfController.condition">&quot;${IS_AUTHORIZATION_REQUIRED}&quot;==&quot;FALSE&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${Test Case ID}_${FUNCTIONNAME}_GET" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="${PARAM_NAME_1}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_1}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_1}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_2}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_2}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_2}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_3}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_3}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_3}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_4}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_4}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_4}</stringProp>
+                    </elementProp>
+                    <elementProp name="${PARAM_NAME_5}" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${PARAM_VALUE_5}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">${PARAM_NAME_5}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${__eval(${PATH})}</stringProp>
+                <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="script">import testteam.file.JSONHelper; 
+
+String jsonResponseBody = prev.getResponseDataAsString(); 
+
+if(vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;).equals(&quot;&quot;)){
+	val= prev.getResponseCode();
+	vars.put(&quot;ACTUAL_VALUE&quot;, val);
+}else{
+	String jsonPath = &quot;$..&quot;+ vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;);
+	val=JSONHelper.readJsonPath(jsonResponseBody, jsonPath);
+	vars.put(&quot;ACTUAL_VALUE&quot;, val.get(0).toString());
+}
+
+log.info(&quot;Response Value Extracted: &quot; + vars.get(&quot;ACTUAL_VALUE&quot;));</stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="96920656">${EXPECTED_RESULT}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                  <stringProp name="Assertion.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">ACTUAL_VALUE</stringProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Method Controller" enabled="true">
+          <stringProp name="IfController.condition">&quot;${METHOD}&quot;!=&quot;GET&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${ITERATION}</stringProp>
+          </LoopController>
+          <hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Is Authorization Required" enabled="true">
+              <stringProp name="IfController.condition">&quot;${IS_AUTHORIZATION_REQUIRED}&quot;!=&quot;FALSE&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${Test Case ID}_${FUNCTIONNAME}_${METHOD}" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${__eval(${__FileToString(${SCRIPTLOC}${__eval(${FILENAME})}.json,,)})}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${PATH}</stringProp>
+                <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="script">import testteam.file.JSONHelper; 
+
+String jsonResponseBody = prev.getResponseDataAsString(); 
+
+if(vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;).equals(&quot;&quot;)){
+	val= prev.getResponseCode();
+	vars.put(&quot;ACTUAL_VALUE&quot;, val);
+}else{
+	String jsonPath = &quot;$..&quot;+ vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;);
+	val=JSONHelper.readJsonPath(jsonResponseBody, jsonPath);
+	vars.put(&quot;ACTUAL_VALUE&quot;, val.get(0).toString());
+}
+
+log.info(&quot;Response Value Extracted: &quot; + vars.get(&quot;ACTUAL_VALUE&quot;));</stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="96920656">${EXPECTED_RESULT}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                  <stringProp name="Assertion.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">ACTUAL_VALUE</stringProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Is Authorization NOT Required" enabled="true">
+              <stringProp name="IfController.condition">&quot;${IS_AUTHORIZATION_REQUIRED}&quot;==&quot;FALSE&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${Test Case ID}_${FUNCTIONNAME}_${METHOD}" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${__eval(${__FileToString(${SCRIPTLOC}${__eval(${FILENAME})}.json,,)})}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${PATH}</stringProp>
+                <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="script">import testteam.file.JSONHelper; 
+
+String jsonResponseBody = prev.getResponseDataAsString(); 
+
+if(vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;).equals(&quot;&quot;)){
+	val= prev.getResponseCode();
+	vars.put(&quot;ACTUAL_VALUE&quot;, val);
+}else{
+	String jsonPath = &quot;$..&quot;+ vars.get(&quot;RESPONSE_FIELD_TO_CHECK&quot;);
+	val=JSONHelper.readJsonPath(jsonResponseBody, jsonPath);
+	vars.put(&quot;ACTUAL_VALUE&quot;, val.get(0).toString());
+}
+
+log.info(&quot;Response Value Extracted: &quot; + vars.get(&quot;ACTUAL_VALUE&quot;));</stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="96920656">${EXPECTED_RESULT}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.custom_message"></stringProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                  <stringProp name="Assertion.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">ACTUAL_VALUE</stringProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>false</dataType>
+              <encoding>false</encoding>
+              <assertions>false</assertions>
+              <subresults>false</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">${RESULTLOC}/${__P(pFILE_TO_TEST)}_Results_${TESTSTART.MS}.csv</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,9 @@
+Test Case ID,Test Case Description,FUNCTIONNAME,PATH,METHOD,username,RESPONSE_FIELD_TO_CHECK ,EXPECTED_RESULT
+TC1,Verify the Get user function response code is 200 with valid input,getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,,200
+TC2,"Verify the Get user function retrieves the same ""id"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,id,1
+TC3,"Verify the Get user function retrieves the same ""firstname"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,firstName,firstname
+TC4,"Verify the Get user function retrieves the same ""lastname"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,lastName,lastname
+TC5,"Verify the Get user function retrieves the same ""email"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,email,email@email.com
+TC6,"Verify the Get user function retrieves the same ""password"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,password,Welcome123
+TC7,"Verify the Get user function retrieves the same ""phone"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,phone,123-456-789
+TC8,"Verify the Get user function retrieves the same ""userStatus"" on the successfully created user",getUserByUsername,/v2/user/${username},GET,anthonytest_12341595235967289,userStatus,1
