@@ -1,2 +1,2 @@
 #,GLOBAL_SERVERNAME,GLOBAL_PROTOCOL,GLOBAL_PORT,THREAD_COUNT,THREAD_RAMPUP,FILE_TO_TEST
-1,kirbyabadilla-eval-test.apigee.net,http,,1,1,TestCase_Hackathon
+1,kirbyabadilla-eval-test.apigee.net,https,,1,1,TestCase_Hackathon

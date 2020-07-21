@@ -1,1 +1,1 @@
-C:\apache-jmeter-5.1.1\bin\jmeter -n -t "Hackathon_v2.jmx" -f -l test-results\testresults.jtl -j test-results\log.log -e -o dashboard
+C:\apache-jmeter-5.1.1\bin\jmeter -n -t "Hackathon_v2.jmx" -f -l test-results\testresults.jtl -j test-results\log.log -e -o dashboard -Jjmeter.reportgenerator.sample_filter="TC.*"

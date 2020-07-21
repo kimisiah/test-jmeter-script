@@ -304,7 +304,7 @@ props.put(&quot;pFILE_TO_TEST&quot;,vars.get(&quot;FILE_TO_TEST&quot;));</string
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">${__eval(${__FileToString(${SCRIPTLOC}${__eval(${FILENAME})}.json,,)})}</stringProp>
+                  <stringProp name="Argument.value">${__eval(${__FileToString(${SCRIPTLOC}${__eval(${AUTH_FILENAME})}.json,,)})}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -313,8 +313,8 @@ props.put(&quot;pFILE_TO_TEST&quot;,vars.get(&quot;FILE_TO_TEST&quot;));</string
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${__eval(${PATH})}</stringProp>
-            <stringProp name="HTTPSampler.method">${METHOD}</stringProp>
+            <stringProp name="HTTPSampler.path">${__eval(${AUTH_PATH})}</stringProp>
+            <stringProp name="HTTPSampler.method">${AUTH_METHOD}</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -496,9 +496,9 @@ log.info(&quot;Response Value Extracted: &quot; + vars.get(&quot;ACTUAL_VALUE&qu
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
-                  <elementProp name="" elementType="Header">
-                    <stringProp name="Header.name">Authorization</stringProp>
-                    <stringProp name="Header.value">Bearer ${access_token}</stringProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
